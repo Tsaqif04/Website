@@ -1,0 +1,43 @@
+body{
+    background-color: #FFE7A7;
+}
+
+.navbar{
+    background-color: #FDD700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding:15px 100px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (orientation: portrait){
+    .nav-links {
+        font-size: 16px;
+        display: none;
+        flex-direction: column;
+        padding: 10px 15px;
+        border-radius: 12px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        gap: 10px;
+        width: fit-content;
+    }
+    .nav-links.show {
+        display: flex !important;
+    }
+    .hamburger {
+        display: block;
+    }
+}
