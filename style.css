@@ -65,3 +65,10 @@ h1{
     align-items: center;
     text-align: center;
 }
+
+.card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    
